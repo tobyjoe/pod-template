@@ -6,7 +6,7 @@ module Pod
     attr_reader :platform, :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email
 
     def initialize(pod_name)
-      @platform = "osx"
+      @platform = :osx
       @pod_name = pod_name
       @pods_for_podfile = []
       @prefixes = []
@@ -155,6 +155,7 @@ module Pod
     end
 
     def rename_template_files
+      puts "Pod Name: #{pod_name}"
       `mv POD_README.md README.md`
       `mv POD_LICENSE LICENSE`
       `mv NAME.podspec #{pod_name}.podspec`
