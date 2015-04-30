@@ -6,7 +6,7 @@ module Pod
     attr_reader :platform, :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email
 
     def initialize(pod_name)
-      @platform = :osx
+      @platform = "osx"
       @pod_name = pod_name
       @pods_for_podfile = []
       @prefixes = []
@@ -72,10 +72,10 @@ module Pod
 
       @platform = self.ask_with_answers("Would you like to create a Mac OS X or iOS pod?", ["OSX", "iOS"]).to_sym
       puts "Platform selected: #{platform}"
-      if platform == :osx
-        ConfigureIOS.perform(configurator: self)
-      else
+      if platform == "osx"
         ConfigureOSX.perform(configurator: self)
+      else
+        ConfigureIOS.perform(configurator: self)
       end
 
       replace_variables_in_files
