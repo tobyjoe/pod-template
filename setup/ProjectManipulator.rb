@@ -62,7 +62,7 @@ module Pod
       project_app_group.remove_from_project
 
       # Remove the actual folder + files
-      `rm -rf templates/ios/Example/PROJECT`
+      `rm -rf templates/#{configurator.platform}/Example/PROJECT`
 
       # Remove the section in the Podfile for the lib by removing top 3 lines after the source
       podfile_path = project_folder + "/Podfile"

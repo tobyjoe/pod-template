@@ -3,9 +3,10 @@ require 'colored'
 module Pod
   class TemplateConfigurator
 
-    attr_reader :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email
+    attr_reader :platform, :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email
 
     def initialize(pod_name)
+      @platform = :osx
       @pod_name = pod_name
       @pods_for_podfile = []
       @prefixes = []
@@ -69,7 +70,13 @@ module Pod
     def run
       @message_bank.welcome_message
 
-      ConfigureIOS.perform(configurator: self)
+      @platform = self.ask_with_answers("Would you like to create a Mac OS X or iOS pod?", ["Mac", "iOS"]).to_sym
+      puts "Platform selected: #{platform}"
+      if platform == "mac"
+        ConfigureIOS.perform(configurator: self)
+      else
+        ConfigureOSX.perform(configurator: self)
+      end
 
       replace_variables_in_files
       clean_template_files
@@ -139,7 +146,7 @@ module Pod
 
     def set_test_framework(test_type)
       content_path = "setup/test_examples/" + test_type + ".m"
-      tests_path = "templates/ios/Example/Tests/Tests.m"
+      tests_path = "templates/#{@platform}/Example/Tests/Tests.m"
       tests = File.read tests_path
       tests.gsub!("${TEST_EXAMPLE}", File.read(content_path) )
       File.open(tests_path, "w") { |file| file.puts tests }
