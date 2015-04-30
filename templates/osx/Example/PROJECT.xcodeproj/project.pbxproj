@@ -61,6 +61,7 @@
 		5742AB161AF2C93E00738843 = {
 			isa = PBXGroup;
 			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				5742AB211AF2C93E00738843 /* PROJECT */,
 				5742AB381AF2C93E00738843 /* PROJECTTests */,
 				5742AB201AF2C93E00738843 /* Products */,
@@ -114,6 +115,13 @@
 				5742AB3A1AF2C93E00738843 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
