@@ -70,9 +70,9 @@ module Pod
     def run
       @message_bank.welcome_message
 
-      @platform = self.ask_with_answers("Would you like to create a Mac OS X or iOS pod?", ["Mac", "iOS"]).to_sym
+      @platform = self.ask_with_answers("Would you like to create a Mac OS X or iOS pod?", ["OSX", "iOS"]).to_sym
       puts "Platform selected: #{platform}"
-      if platform == "mac"
+      if platform == :osx
         ConfigureIOS.perform(configurator: self)
       else
         ConfigureOSX.perform(configurator: self)
