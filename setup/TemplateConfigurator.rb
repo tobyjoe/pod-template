@@ -73,8 +73,10 @@ module Pod
       @platform = self.ask_with_answers("Would you like to create a Mac OS X or iOS pod?", ["OSX", "iOS"]).to_sym
       puts "Platform selected: #{platform}"
       if platform == "osx"
+        puts "Using ConfigureOSX"
         ConfigureOSX.perform(configurator: self)
       else
+        puts "Using ConfigureIOS"
         ConfigureIOS.perform(configurator: self)
       end
 
