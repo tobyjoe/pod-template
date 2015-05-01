@@ -13,6 +13,7 @@
 		5742AB2D1AF2C93E00738843 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5742AB2C1AF2C93E00738843 /* Images.xcassets */; };
 		5742AB301AF2C93E00738843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5742AB2E1AF2C93E00738843 /* Main.storyboard */; };
 		5742AB3C1AF2C93E00738843 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742AB3B1AF2C93E00738843 /* Tests.m */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				5742AB211AF2C93E00738843 /* PROJECT */,
 				5742AB381AF2C93E00738843 /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
 				5742AB201AF2C93E00738843 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +77,17 @@
 				5742AB351AF2C93E00738843 /* Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* Cocoa.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5742AB211AF2C93E00738843 /* PROJECT */ = {
@@ -96,6 +109,8 @@
 			children = (
 				5742AB231AF2C93E00738843 /* PROJECT-Info.plist */,
 				5742AB271AF2C93E00738843 /* main.m */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* PROJECT-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
