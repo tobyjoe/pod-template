@@ -119,6 +119,8 @@ module Pod
         text.gsub!("${YEAR}", year)
         text.gsub!("${DATE}", date)
         text.gsub!("${PLATFORM}", @platform.to_s)
+        text.gsub!("${PLATFORM_VERSION}", (@platform == :osx ? '10.9' : '7.1'))
+
         File.open(file_name, "w") { |file| file.puts text }
       end
     end
