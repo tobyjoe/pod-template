@@ -109,7 +109,6 @@
 			children = (
 				5742AB231AF2C93E00738843 /* PROJECT-Info.plist */,
 				5742AB271AF2C93E00738843 /* main.m */,
-				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* PROJECT-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -127,7 +126,7 @@
 		5742AB391AF2C93E00738843 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5742AB3A1AF2C93E00738843 /* Info.plist */,
+				5742AB3A1AF2C93E00738843 /* Tests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
