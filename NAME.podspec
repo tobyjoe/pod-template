@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/${POD_NAME}.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :osx, '10.10'
+  s.platform     = 'PLATFORM', ('PLATFORM'.eql? :osx ? '10.10' : '7.1')
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
