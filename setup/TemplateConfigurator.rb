@@ -118,7 +118,7 @@ module Pod
         text.gsub!("${USER_EMAIL}", user_email)
         text.gsub!("${YEAR}", year)
         text.gsub!("${DATE}", date)
-        text.gsub!("${PLATFORM}", @platform)
+        text.gsub!("${PLATFORM}", @platform.to_s)
         File.open(file_name, "w") { |file| file.puts text }
       end
     end
