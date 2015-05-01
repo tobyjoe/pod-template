@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		5742AB1F1AF2C93E00738843 /* PROJECT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECT.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5742AB231AF2C93E00738843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5742AB231AF2C93E00738843 /* PROJECT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PROJECT-Info.plist; sourceTree = "<group>"; };
 		5742AB241AF2C93E00738843 /* CPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDAppDelegate.h; sourceTree = "<group>"; };
 		5742AB251AF2C93E00738843 /* CPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDAppDelegate.m; sourceTree = "<group>"; };
 		5742AB271AF2C93E00738843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		5742AB2C1AF2C93E00738843 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5742AB2F1AF2C93E00738843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5742AB351AF2C93E00738843 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5742AB3A1AF2C93E00738843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5742AB3A1AF2C93E00738843 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests-Info.plist; sourceTree = "<group>"; };
 		5742AB3B1AF2C93E00738843 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +94,7 @@
 		5742AB221AF2C93E00738843 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5742AB231AF2C93E00738843 /* Info.plist */,
+				5742AB231AF2C93E00738843 /* PROJECT-Info.plist */,
 				5742AB271AF2C93E00738843 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -343,7 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = PROJECT/Info.plist;
+				INFOPLIST_FILE = PROJECT/PROJECT-Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,7 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = PROJECT/Info.plist;
+				INFOPLIST_FILE = PROJECT/PROJECT-Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -373,7 +373,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = Tests/Tests-Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PROJECT.app/Contents/MacOS/PROJECT";
@@ -389,7 +389,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = Tests/Tests-Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PROJECT.app/Contents/MacOS/PROJECT";
